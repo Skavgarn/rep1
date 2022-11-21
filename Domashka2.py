@@ -1,8 +1,12 @@
 import sqlite3
-conn = sqlite3.connect("database.db")
+conn = sqlite3.connect("conf.db")
 curs = conn.cursor()
-curs.execute("""CREATE TABLE AUTH(login TEXT, password TEXT);
-""")
+zap1 = ''' CREATE TABLE "Конференции"("Название коференции" TEXT,"Дата проведения" TEXT, "Место проведения" TEXT, "Организаторы" TEXT, "Спонсоры" TEXT,  "Количество дней проведения конференции" TEXT, "Количество участников" TEXT, "Количество докладчиков" TEXT);'''
+zap2 = ''' CREATE TABLE "Cправочник персоналий участников конференции"("ФИО" TEXT, "ученая степень" TEXT, "научное направление" TEXT, "место работы" TEXT, "кафедра" TEXT, "должность" TEXT, "страна" TEXT, "город" TEXT, "адрес" TEXT, "рабочий телефон" TEXT, "адрес электронной почты" TEXT);'''
+zap3 = ''' CREATE TABLE "Информация, связанная с участием в конференции"("Докладчик или участник" TEXT, "дата рассылки приглашения" TEXT, "дата поступления заявки" TEXT, "тема доклада" TEXT, "отметка о поступлении тезисов" TEXT, "дата приезда" TEXT, "потребность в гостинице" TEXT, "дата отъезда" TEXT);'''
+curs.execute(zap1)
+curs.execute(zap2)
+curs.execute(zap3)
 conn.commit()
 curs.close()
 conn.close()
