@@ -51,37 +51,51 @@ height:500px;
 width:100%;
 }
 #ABOUT{
-background-color:green;
+background-color:red;
 height:500px;
 width:100%;
 }
 #PROJECTS{
-background-color:black;
+background-color:red;
 height:500px;
 width:100%;
 }
 #TEAM{
-background-color:blue;
+background-color:red;
 height:500px;
 width:100%;
 }
 #NEWS{
-background-color:yellow;
+background-color:red;
 height:500px;
 width:100%;
 }
 #CONTACTS{
-background-color:grey;
+background-color:red;
 height:500px;
 width:100%;
 }
 #PAGES{
-background-color:brown;
+background-color:red;
 height:500px;
 width:100%;
 }
-#WHILE{
-background-color:pink;
-height:500px;
-width:100%;
+footer{
+    width:100%;
+    height:300px;
+    background-color:slategray;
+}
+.footer{
+    width:98%;
+    height:290px;
+    background-color:antiquewhite;
+    margin:auto;
+    border-radius:25px;
+}
+.raz{
+    background-color:white;
+    width:98%;
+    pading:10px;
+    margin:auto;
+    height:480px;
 }
